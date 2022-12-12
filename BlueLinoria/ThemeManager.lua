@@ -73,7 +73,7 @@ local ThemeManager = {} do
 		writefile(self.Folder .. '/themes/default.txt', theme)
 	end
 
-	function ThemeManager:CreateThemeManager(		groupbox)
+		local groupbox = ThemeManager:AddLeftGroupbox('             Themes')
 		groupbox:AddLabel('Background color'):AddColorPicker('BackgroundColor', { Default = self.Library.BackgroundColor });
 		groupbox:AddLabel('Main color')	:AddColorPicker('MainColor', { Default = self.Library.MainColor });
 		groupbox:AddLabel('Accent color'):AddColorPicker('AccentColor', { Default = self.Library.AccentColor });
